@@ -8,4 +8,4 @@ RUN echo "ms-dns 8.8.8.8" >> /etc/ppp/pptpd-options
 RUN echo "ms-dns 8.8.4.4" >> /etc/ppp/pptpd-options
 COPY secret /etc/ppp/chap-secrets
 COPY pptpd.sh /usr/local/bin
-ENTRYPOINT ["pptpd.sh"]
+CMD ["pptpd.sh"]
